@@ -502,7 +502,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 1650 6300 2400
 Wire Wire Line
-	6400 1750 6400 2400
+	6400 1750 6400 2250
 $Comp
 L RP_MD:W25Q16JV U4
 U 1 1 627604F8
@@ -1397,4 +1397,67 @@ F 3 "" H 3200 5000 50  0001 C CNN
 $EndComp
 Text Notes 9450 2850 0    50   ~ 0
 V_bat_max=25 V\n\n25V->3V\nR1=100k\nR2=15k\n(R2)/(R1+R2)*25=3.26V
+Wire Wire Line
+	6500 2400 6500 2250
+Wire Wire Line
+	6500 2250 6400 2250
+Connection ~ 6400 2250
+Wire Wire Line
+	6400 2250 6400 2400
+Wire Wire Line
+	6100 4850 6100 4700
+Wire Wire Line
+	6200 4850 6200 4700
+$Comp
+L Connector:Conn_01x03_Female J9
+U 1 1 62A13952
+P 4150 5500
+F 0 "J9" H 4042 5175 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 4042 5266 50  0000 C CNN
+F 2 "" H 4150 5500 50  0001 C CNN
+F 3 "~" H 4150 5500 50  0001 C CNN
+	1    4150 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 5400 4350 5400
+Wire Wire Line
+	4350 5500 4500 5500
+Wire Wire Line
+	4350 5600 4500 5600
+Wire Wire Line
+	4500 5600 4500 5750
+$Comp
+L power:GND #PWR0101
+U 1 1 62A33115
+P 4500 5750
+F 0 "#PWR0101" H 4500 5500 50  0001 C CNN
+F 1 "GND" H 4505 5577 50  0000 C CNN
+F 2 "" H 4500 5750 50  0001 C CNN
+F 3 "" H 4500 5750 50  0001 C CNN
+	1    4500 5750
+	-1   0    0    -1  
+$EndComp
+Text Label 6100 4850 3    50   ~ 0
+SWCLK
+Text Label 6200 4850 3    50   ~ 0
+SWDIO
+Text Label 4500 5400 0    50   ~ 0
+SWCLK
+Text Label 4500 5500 0    50   ~ 0
+SWDIO
+NoConn ~ 1950 1050
+NoConn ~ 1950 1250
+NoConn ~ 1950 1350
+NoConn ~ 1950 2050
+NoConn ~ 1950 2150
+NoConn ~ 1950 2350
+NoConn ~ 1950 2450
+NoConn ~ 1950 2650
+NoConn ~ 1950 2750
+NoConn ~ 1950 2950
+NoConn ~ 1950 3050
+NoConn ~ 1950 3250
+NoConn ~ 1950 3350
+Connection ~ 1350 3650
 $EndSCHEMATC
