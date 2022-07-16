@@ -612,8 +612,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 5600 3550 5600
 Wire Wire Line
-	3550 5600 3550 5500
-Wire Wire Line
 	5750 4750 5750 4650
 Connection ~ 5750 4650
 Wire Wire Line
@@ -741,4 +739,42 @@ F 3 "" H 4250 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 3700 6000 3700
+$Comp
+L Device:C C?
+U 1 1 62B995F9
+P 3650 5700
+AR Path="/6260775B/62B995F9" Ref="C?"  Part="1" 
+AR Path="/625A1E06/62B995F9" Ref="C27"  Part="1" 
+AR Path="/62781A5B/62B995F9" Ref="C28"  Part="1" 
+F 0 "C27" V 3398 5700 50  0000 C CNN
+F 1 "0.1u 50V" V 3489 5700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3688 5550 50  0001 C CNN
+F 3 "~" H 3650 5700 50  0001 C CNN
+	1    3650 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 5500 3550 5550
+Wire Wire Line
+	3650 5550 3550 5550
+Connection ~ 3550 5550
+Wire Wire Line
+	3550 5550 3550 5600
+$Comp
+L power:GND #PWR041
+U 1 1 62B9F70E
+P 3650 6000
+AR Path="/625A1E06/62B9F70E" Ref="#PWR041"  Part="1" 
+AR Path="/625A1EDE/62B9F70E" Ref="#PWR?"  Part="1" 
+AR Path="/6260775B/62B9F70E" Ref="#PWR?"  Part="1" 
+AR Path="/62781A5B/62B9F70E" Ref="#PWR045"  Part="1" 
+F 0 "#PWR041" H 3650 5750 50  0001 C CNN
+F 1 "GND" H 3655 5827 50  0000 C CNN
+F 2 "" H 3650 6000 50  0001 C CNN
+F 3 "" H 3650 6000 50  0001 C CNN
+	1    3650 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 6000 3650 5850
 $EndSCHEMATC

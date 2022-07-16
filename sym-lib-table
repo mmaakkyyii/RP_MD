@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name RP_MD)(type Legacy)(uri ${KIPRJMOD}/RP_MD.lib)(options "")(descr ""))
+  (lib (name RP_MD-rescue)(type Legacy)(uri ${KIPRJMOD}/RP_MD-rescue.lib)(options "")(descr ""))
 )
