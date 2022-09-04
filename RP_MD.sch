@@ -203,7 +203,7 @@ $EndComp
 Wire Wire Line
 	1950 1350 1950 1250
 $Comp
-L maki_lib:XT30PW-M CN?
+L RP_MD-rescue:XT30PW-M-maki_lib CN?
 U 1 1 627A6CEC
 P 1700 2550
 AR Path="/625A1E06/627A6CEC" Ref="CN?"  Part="1" 

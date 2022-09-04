@@ -681,7 +681,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 5800 4250 6000
 $Comp
-L maki_lib:XT30PW CN2
+L RP_MD-rescue:XT30PW-maki_lib CN2
 U 1 1 627A7B14
 P 5700 3800
 AR Path="/625A1E06/627A7B14" Ref="CN2"  Part="1" 
